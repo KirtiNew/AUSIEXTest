@@ -120,13 +120,31 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Constants\APIEndPoints.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Commit.cs" />
+    <Compile Include="Models\CommitComment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\bootstrap-theme.min.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\buttons.dataTables.min.css" />
+    <Content Include="Assets\css\jquery.dataTables.css" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\buttons.flash.min.js" />
+    <Content Include="Assets\js\buttons.html5.min.js" />
+    <Content Include="Assets\js\buttons.print.min.js" />
+    <Content Include="Assets\js\dataTables.buttons.min.js" />
+    <Content Include="Assets\js\jquery-3.5.1.js" />
+    <Content Include="Assets\js\jquery.dataTables.min.js" />
+    <Content Include="Assets\js\jszip.min.js" />
+    <Content Include="Assets\js\pdfmake.min.js" />
+    <Content Include="Assets\js\vfs_fonts.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -162,10 +180,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Comment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
